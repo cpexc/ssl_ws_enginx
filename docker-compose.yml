@@ -3,9 +3,8 @@ version: '3'
 services:
   nginx:
     container_name: nginx_wss_ssl_container_1
-    image: cpublic/nginx_wss_ssl:latest
+    image: cpublic/nginx_wss_ssl:testnet
     ports:
-      - 80:80
       - 443:443
     volumes:
       - /home/cpxadmin/encryption:/opt/ssl
